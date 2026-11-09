@@ -1,0 +1,31 @@
+# never commit game data or anything derived from it
+*.zip
+*.bin
+!tools/cycles68k.bin
+!tools/cycles020.bin
+# ROM-derived scratch
+rom_main.bin
+musashi/m68kops.c
+musashi/m68kops.h
+musashi/m68kmake
+*.nv
+rom/
+gen/
+gen_trace/
+# build output
+build/
+dist/
+tools/libdis.so
+win/*.res.o
+__pycache__/
+# no CMake files (the project builds with the shell scripts)
+*.cmake
+CMakeLists.txt
+CMakeCache.txt
+CMakeFiles/
+# no BIOS / ROM images of any kind
+*.rom
+*.ic[0-9]*
+*.u[0-9]*
+bios/
+roms/
